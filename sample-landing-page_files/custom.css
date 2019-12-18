@@ -19,7 +19,7 @@ section a{
 
 .btn-red {
     color: #fff;
-    background: #fb1a33;
+    background: blue;
 }
 
 .logo {
@@ -66,7 +66,7 @@ section a{
 }
 
 .bg-red {
-    background: #fb1a33;
+    background:blue;
 }
 
 .youtube-iframe {
@@ -161,14 +161,19 @@ section a{
     display: inline-block;
     padding-right: 10px;
 }
-
-@media all and (max-width: 400px) {
-    .cta{display:block;}
+.cta {
+    display: none;
 }
-@media all and (max-width: 959px) {
-    .cta{display:none;}
-}
+@media all and (max-width: 767px) {
+    .header{
+        text-align : center;
+    }
 
-@media all and (max-width: 720px) {
-    .cta{display:none;}
+    .cta {
+        display: inline;
+    }                                                                                                                          
+
+   .nav{
+        margin-top : 30px;
+   }
 }
