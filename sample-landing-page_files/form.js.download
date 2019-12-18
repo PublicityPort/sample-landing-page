@@ -1,0 +1,16 @@
+
+$(function () {
+    $("#ip3").change(function () {
+        var nu = $("#ip3 option:selected").attr("dealer_no");
+        $("#ip4").val(nu);
+    })
+    $(".formip").on("keyup change", function () {
+        var disabled = false;
+        for (var i = 0; i < $(".formip").length; i++) {
+            if (!$(".formip").eq(i).val()) {
+                disabled = true;
+            }
+        }
+        $("#submitbtn").prop("disabled", disabled);
+    })
+})
